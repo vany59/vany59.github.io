@@ -186,8 +186,14 @@ fjs.parentNode.insertBefore(js, fjs);
 <li><p>Tạo 1 Repository với Repository name là <code>&lt;username&gt;.github.io</code>. VD: github username của mình là “vany-chocolate” thì mình sẽ tạo repository name là “vany-chocolate.github.io</p>
 <img src="https://lh3.googleusercontent.com/9XHjDN8fEWQFbyORjXVO3OITkFDoJMHYiIiCCnu96uFsYgvG_1A6KQgr-YFV_ibLQqynmWgD4B4glEmFfFHSM8RrtH-BeUEwumpYVbBeaYkz6gms42Xq0khlsANcp1XBhUZDFm3TC2laJhIi56lzNSY5a28kDXwxR3zst-j87TGteaxZPOLb3Uru2CZge2rrQVTylzcRSXfq3-djpIwZyH8WXity6GI6fyS_nBAWdPuttbGXGeiqz87DRbNGNpvdqhfP89pLWAQ9vlIhzknzU9VMrHYLY1TIQTJ74mTQLCeRguroTJ03pwKSo1VyXSnnlEj1QmqsOzdqeKmyvSREqhLqhFyur6XdqJgdJSBArLjeQYeyvrPTc7SRynofe6DV7fyNQctKqm3-7sb4KONv0knIsAAjlNQQqYXE7lBx4pdHkITBb6z9vnMb9ubasWMhW1ugqWZVp8fXCxPuslXZPW8b7nStiB45ByGJxK9nF_en4r8VqiX_4b-ec24XgToffnB93MbLnXYZ6lQvI7nWbFiw8sJZ14vh1REjSGhIilBAySYr3gTPsZj_TZkE_24VtDBebSViVbRk_POKziDW-yYLJm5dyljQ1tFdT80J8BvQJMKENup-bfl9jE6Xv-lBNBRGWXpSDV0nGJvvmYkocWXc5Qlw3Vq9mQ198jsyi-oZlPhiCHX0EfMi8BcWdg=w1643-h924-no">
 </li>
-<li><p>Push blog lên github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;vany-chocolate&#x2F;vany-chocolate.github.io.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+<li><p>Cài deploy pakages cho hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Config deploy<br>Repo thay repository bằng link repository mới tạo</p>
+<figure class="highlight diff"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+   type: git</span></span><br><span class="line"><span class="addition">+   repo: https://github.com/vany-chocolate/vany-chocolate.github.io.git</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Deploy</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
 </ul>
 
         </div>
