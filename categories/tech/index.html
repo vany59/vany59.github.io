@@ -8,13 +8,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Category: tech - vany blog</title>
+<title>Category: tech</title>
 
 
     <meta property="og:type" content="website">
-<meta property="og:title" content="vany blog">
+<meta property="og:title">
 <meta property="og:url" content="http://yoursite.com/categories/tech/index.html">
-<meta property="og:site_name" content="vany blog">
+<meta property="og:site_name">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:author" content="Van Y Le">
@@ -87,7 +87,7 @@ fjs.parentNode.insertBefore(js, fjs);
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
                 
-                <img src="/images/logo.svg" alt="vany blog" height="28">
+                <img src="/images/logo.svg" alt="" height="28">
                 
             </a>
         </div>
@@ -114,7 +114,7 @@ fjs.parentNode.insertBefore(js, fjs);
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/03/27/blog/" class="image is-7by1">
+        <a href="/2020/03/30/blog/" class="image is-7by1">
         <img class="thumbnail" src="https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png" alt="Mình đã tạo blog này như thế nào?">
         </a>
     </div>
@@ -123,7 +123,7 @@ fjs.parentNode.insertBefore(js, fjs);
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <span class="level-item has-text-grey">27/03/2020</span>
+                <span class="level-item has-text-grey">30/03/2020</span>
                 
                 <div class=" level-item">
                     <a class="has-link-grey -link" href="/categories/tech/">tech</a>
@@ -135,22 +135,69 @@ fjs.parentNode.insertBefore(js, fjs);
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-            <a class="has-link-black-ter" href="/2020/03/27/blog/">Mình đã tạo blog này như thế nào?</a>
+            <a class="has-link-black-ter" href="/2020/03/30/blog/">Mình đã tạo blog này như thế nào?</a>
             
         </h1>
         <div class="content">
-            <p> &nbsp;&nbsp;Lấy cảm hứng từ blog và lời khuyên của chú mình (blog: <a href="http://runikitkat.com/">runikitkat</a>) mình đã tập tành viết blog mặc dù là văn chương của mình rất kém, nhưng mà mục đích mình làm blog này là để chia sẻ những kiến thức mình tìm hiểu được cũng như là nhận lại góp ý tích cực của mọi người về những thông tin mình tìm hiểu chưa tới hoặc bị sai (nên các bác ném đá nhẹ tay thôi ạ 😭).<br>
+            <p> &nbsp;&nbsp;Nhận được lời động viên và giúp đỡ từ chú <a href="http://runikitkat.com/">runi</a> mình đã tập tành viết blog các kiểu nhằm chia sẻ đến mọi người những gì mình vừa mới tìm hiểu được (mặc dù là văn chương mình rất tệ 😪). Và đây là bài blog đầu tiên của mình 😆</p>
+<p> &nbsp;&nbsp;Như mục đính chính của mình là chia sẻ những gì mình học được vì thế mình sẽ chia sẻ về cách mà mình tạo ra cái blog này :))))<br>&nbsp;&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;Blog này mình dùng framework <a href="https://hexo.io/">hexo</a> cung cấp bởi nodejs vì thế đối với các bạn lần đầu sử dụng nodejs thì cần phải cài nodejs.<br> &nbsp;&nbsp;* Đối với các bạn dùng windows chúng ta có thể tải và cài đặt nodejs <a href="https://nodejs.org/en/">ở đây</a><br>  &nbsp;&nbsp;* Đối với các bạn dùng linux thì chúng ta dùng nvm để cài nodejs bằng lệnh:<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-sh&#x2F;nvm&#x2F;v0.35.3&#x2F;install.sh | bash</span><br><span class="line">nvm install v12</span><br></pre></td></tr></table></figure><br>Sau khi cài đặt xong chúng ta bắt đầu tạo blog thôi 😆😆</p>
+<ol>
+<li><p>Cài đặt hexo bằng câu lệnh:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Khởi tạo project mới:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;blog name&gt;</span><br></pre></td></tr></table></figure>
+<p>Sau khi thực thi lệnh xong, hexo sẽ khởi tạo cho chúng ta 1 thư mục blogname và cài hết những packages cần thiết.</p>
+</li>
+<li><p>Start server<br>Mặc định ban đầu server sẽ chạy ở <a href="http://localhost:4000">http://localhost:4000</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;blog name&gt;</span><br><span class="line">npm run server</span><br></pre></td></tr></table></figure>
+<p>Và đây là giao diện blog của chúng ta.<br><img src="https://lh3.googleusercontent.com/gzF5kQHENVR4Ia52ZPbB7cmZ-UdO8jXT04tHwxG8be7TIfDO5Kg2FfIeNbjimFXvwI8gPhfbP23_Azeuu9akgEf0W6LqmjirOhlvbtLq4VJen5n9K9jnxlB65-VYZOwD17yilGr28RtD9rC-jzFzriolm8N7ZPCxpcemI0F0WhL2RvyM-wG5aZE8hkx1WzGpNfTT623OvV_MGOWKcQPILpIw3HQxFXtlirKl6eIB3TARmO5hhlZYacxWq5zGyp8EsgwPR6qWeJNtgeTTRl8G70_jhpajxYBZsglnECJ2L2iLvBaMgbzkXt2ni83nb7EAOIc5Fiqdhtw2QLup9hmnif-LQr5-j1ZRXe4bS44TMMdoS3-8wt9DHGAk5NS_HallexmLJ9tKItck5mE1TB_o9WVZ4bNLbSZIpa-yAbCCeMF8HtV0vYSznAQvQ2_WIfm59b2O7AU6BM0zETy92hhJmq0sR0Ssrr2AP6LavTduZ01aHSSnwB8-3baRM1X-YQPqXrxkjFFtpf7s9g0tBqkPoPpOEePcVrrMdXDubxG99z3B5ekinCOhx00bKkexys64V1iRZHwUbBWCh9obdrdsVNOdWyhJGqBhL2Mhj8XsbKP0uyH-dOZShSWlDx8VTHD2_y1ZwBb9iOl7cC6hza0WYVCupRfHEcHUjNfpdGYT22AfAAeOg6r_oNoMPRjzSg=w1739-h924-no" alt="hexo" title="hexo"></p>
+</li>
+</ol>
+<h3 id="De-co-cho-blog-nhin-dep-hon-thi-minh-nen-cai-them-cac-theme-blog-minh-dang-dung-la-theme-icarus"><a href="#De-co-cho-blog-nhin-dep-hon-thi-minh-nen-cai-them-cac-theme-blog-minh-dang-dung-la-theme-icarus" class="headerlink" title="Để có cho blog nhìn đẹp hơn thì mình nên cài thêm các theme (blog mình đang dùng là theme icarus)"></a>Để có cho blog nhìn đẹp hơn thì mình nên cài thêm các theme (blog mình đang dùng là theme <a href="https://github.com/ppoffice/hexo-theme-icarus">icarus</a>)</h3><p>&nbsp;&nbsp; Mọi người có thể xem thêm các theme khác <a href="https://hexo.io/themes/">ở đây</a></p>
+<ol>
+<li><p>Clone icarus từ github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-icarus.git themes&#x2F;icarus</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Chuyển blog sang theme icarus</p>
+<figure class="highlight diff"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">- theme: landscape</span></span><br><span class="line"><span class="addition">+ theme: icarus</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Cài cheerio dependencies</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save cheerio</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Start server<br>Dùng phím <strong>Ctrl+C</strong> để tắt server đạng chạy. Sau đó start lại</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run server</span><br></pre></td></tr></table></figure>
+<p><img src="https://lh3.googleusercontent.com/7-mSdVIlfllJBeibB_To1V3WZ0sgO1iIIWhLBFw-srb8E0T8S14Vw3OYmAuaGHGG37AZwvJz1wWoz8A7cT1S9EgwDrR-MNPQGtPgyNGcv5U_bR398Dmkvdxw3WQ91lG4UfxA6H2gLCbXBY_A91kgCxyqDYX5fqjqdn9vKjcTvijrS33aeSpTXWRREXwOl3uBQdtHiienW27ZRQFfRcSrYzt-nQ-zHmZt-oKAWw8XAlD8GJYZJd5YeMj4UqMSuoSJORETV91uwJW3ybZTnOvSN2UrlpbZVtGK3VvK-rXY97Z5PDVbB0P-QNhMwV1pVJpFGYcrSyuOxPdNP21wTa2ny-Wp8DkFZYq512Qd5YQld2dBO9PZpg3lniM9QLAR6F7IEZU1rjxKpLHMpRB7_hJEbXcfHUuxxACyIX9m8Dyukf6k-v-p5vrXcwL78Do8tPLzbP38j4fQm66Ga8ewR3duLFkJslfHPi2GIrPRor9OuRv48rcJR0o6l9nq9qmGZrFuJaaRR_O10RHGw-H_YdFvH5GWvfVP7Oe3p-2dSH2XL819cOMiC3KZSNaRytsuT6hfsuqoBSnLjYO3igb7j2tTCJrc8c7Mf2Vdj7It1H_nXQSXSNSPWbUlKkkCZuY1iIA2De-zqhUxZU1vZRGFFKuEo-TJtCEARQ9FsP8og7Ld4JDlXgJg0u5F3w8rZPL65A=w1739-h924-no" alt="icarus theme" title="icarus"><br>Để chỉnh tên, tiêu đề, địa chỉ của chúng ta trên theme thì chỉnh phần widgets trong <code>/themes/icarus/_config.yml</code></p>
+</li>
+<li><p>Bắt đầu viết blog<br>Các bài blog của chúng ta sẽ được viết trong <code>source/_posts/</code>, các file blog sẽ có định dạng là <code>**.md</code>. Đây là file markdown, khá là dễ Viết. Mọi người có thể tham khảo cách viết markdown file <a href="https://www.markdownguide.org/basic-syntax/">tại đây</a></p>
+</li>
+</ol>
+<ul>
+<li>Lưu ý: ở đầu file <code>.md</code> chúng ta nên thêm title,tags, categories, thumbnail<figure class="highlight diff"><figcaption><span>source/_posts/blog.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ ---</span></span><br><span class="line"><span class="addition">+ title: "Mình đã tạo blog này như thế nào?"</span></span><br><span class="line"><span class="addition">+ date: 3/30/2020</span></span><br><span class="line"><span class="addition">+ tags: share</span></span><br><span class="line"><span class="addition">+ categories: tech</span></span><br><span class="line"><span class="addition">+ thumbnail: https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png</span></span><br><span class="line"><span class="addition">+ ---</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="6">
+<li>Deploy blog lên github</li>
+</ol>
+<ul>
+<li><p>Tạo 1 Repository với Repository name là <code>&lt;username&gt;.github.io</code>. VD: github username của mình là “vany-chocolate” thì mình sẽ tạo repository name là “vany-chocolate.github.io”</p>
+<img src="https://lh3.googleusercontent.com/9XHjDN8fEWQFbyORjXVO3OITkFDoJMHYiIiCCnu96uFsYgvG_1A6KQgr-YFV_ibLQqynmWgD4B4glEmFfFHSM8RrtH-BeUEwumpYVbBeaYkz6gms42Xq0khlsANcp1XBhUZDFm3TC2laJhIi56lzNSY5a28kDXwxR3zst-j87TGteaxZPOLb3Uru2CZge2rrQVTylzcRSXfq3-djpIwZyH8WXity6GI6fyS_nBAWdPuttbGXGeiqz87DRbNGNpvdqhfP89pLWAQ9vlIhzknzU9VMrHYLY1TIQTJ74mTQLCeRguroTJ03pwKSo1VyXSnnlEj1QmqsOzdqeKmyvSREqhLqhFyur6XdqJgdJSBArLjeQYeyvrPTc7SRynofe6DV7fyNQctKqm3-7sb4KONv0knIsAAjlNQQqYXE7lBx4pdHkITBb6z9vnMb9ubasWMhW1ugqWZVp8fXCxPuslXZPW8b7nStiB45ByGJxK9nF_en4r8VqiX_4b-ec24XgToffnB93MbLnXYZ6lQvI7nWbFiw8sJZ14vh1REjSGhIilBAySYr3gTPsZj_TZkE_24VtDBebSViVbRk_POKziDW-yYLJm5dyljQ1tFdT80J8BvQJMKENup-bfl9jE6Xv-lBNBRGWXpSDV0nGJvvmYkocWXc5Qlw3Vq9mQ198jsyi-oZlPhiCHX0EfMi8BcWdg=w1643-h924-no">
+</li>
+<li><p>Cài deploy pakages cho hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Config deploy<br>repo thay repository bằng link repository mới tạo</p>
+<figure class="highlight diff"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+   type: git</span></span><br><span class="line"><span class="addition">+   repo: https://github.com/vany-chocolate/vany-chocolate.github.io.git</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Deploy blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Sau khi deploy xong mở link theo tên Repository chúng ta tạo và thưởng thức blog của chính mình nào 😍😍</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                    <a class="button is-size-7 is-light"
-                        href="/2020/03/27/blog/#more">Read More</a>
-                </div>
-            </div>
-        </div>
         
         
     </div>
@@ -322,7 +369,7 @@ err" data-numposts="10"></div>
         
         <article class="media">
             
-            <a href="/2020/03/27/blog/" class="media-left">
+            <a href="/2020/03/30/blog/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png" alt="Mình đã tạo blog này như thế nào?">
                 </p>
@@ -331,8 +378,8 @@ err" data-numposts="10"></div>
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase"
-                            datetime="2020-03-26T17:00:00.000Z">27/03/2020</time></div>
-                    <a href="/2020/03/27/blog/"
+                            datetime="2020-03-29T17:00:00.000Z">30/03/2020</time></div>
+                    <a href="/2020/03/30/blog/"
                         class="title has-link-black-ter is-size-6 has-text-weight-normal">Mình đã tạo blog này như thế nào?</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/tech/">tech</a>
@@ -407,7 +454,7 @@ err" data-numposts="10"></div>
         
         <article class="media">
             
-            <a href="/2020/03/27/blog/" class="media-left">
+            <a href="/2020/03/30/blog/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="https://www.webnode.com/blog/wp-content/uploads/2019/04/blog2.png" alt="Mình đã tạo blog này như thế nào?">
                 </p>
@@ -416,8 +463,8 @@ err" data-numposts="10"></div>
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase"
-                            datetime="2020-03-26T17:00:00.000Z">27/03/2020</time></div>
-                    <a href="/2020/03/27/blog/"
+                            datetime="2020-03-29T17:00:00.000Z">30/03/2020</time></div>
+                    <a href="/2020/03/30/blog/"
                         class="title has-link-black-ter is-size-6 has-text-weight-normal">Mình đã tạo blog này như thế nào?</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/tech/">tech</a>
@@ -485,7 +532,7 @@ err" data-numposts="10"></div>
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="vany blog" height="28">
+                    <img src="/images/logo.svg" alt="" height="28">
                 
                 </a>
                 <p class="is-size-7">
